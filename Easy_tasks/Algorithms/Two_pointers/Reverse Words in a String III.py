@@ -5,3 +5,4 @@ class Solution:
         for word in s_strip:
             result += word[::-1] + ' '
         return result.rstrip(' ')
+
