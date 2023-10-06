@@ -4,6 +4,7 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
 class Solution:
     def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
         if not root:
@@ -18,3 +19,4 @@ class Solution:
             result += self.rangeSumBST(root.right, low, high)
 
         return result
+
